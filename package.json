@@ -2,7 +2,7 @@
   "name": "page-crawler",
   "version": "1.0.0",
   "description": "Hobby-ish page crawler.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "npm run lint; tsc --p tsconfig.build.json",
     "lint": "eslint .",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@mlyngvo/eslint-config": "^1.0.3",
     "@types/node": "^20.11.6",
+    "@types/node-cron": "^3.0.11",
     "@types/nodemailer": "^6.4.14",
     "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
@@ -26,6 +27,7 @@
   "dependencies": {
     "axios": "^1.6.5",
     "fast-xml-parser": "^4.3.3",
+    "node-cron": "^3.0.3",
     "nodemailer": "^6.9.8"
   }
 }

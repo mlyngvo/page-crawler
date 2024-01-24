@@ -20,7 +20,7 @@ interface Data {
     }
 }
 
-(async () => {
+export async function processCongbao() {
     const data = await get('https://congbao.chinhphu.vn/cac_so_cong_bao_moi_dang.rss');
     if (!isXmlValid(data)) {
         throw new Error('Malicious XML content.');
@@ -51,7 +51,7 @@ interface Data {
         console.info(`Update current key (${FILE_KEY}).`);
         writeKey(FILE_KEY, entry.title);
     }
-})();
+}
 
 
 
