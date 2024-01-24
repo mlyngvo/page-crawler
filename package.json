@@ -1,0 +1,31 @@
+{
+  "name": "page-crawler",
+  "version": "1.0.0",
+  "description": "Hobby-ish page crawler.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run lint; tsc --p tsconfig.build.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "clean": "rimraf ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlyngvo/page-crawler.git"
+  },
+  "keywords": [],
+  "author": "Ly nguyen <contact@minhlynguyenvo.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@mlyngvo/eslint-config": "^1.0.3",
+    "@types/node": "^20.11.6",
+    "@types/nodemailer": "^6.4.14",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "fast-xml-parser": "^4.3.3",
+    "nodemailer": "^6.9.8"
+  }
+}
