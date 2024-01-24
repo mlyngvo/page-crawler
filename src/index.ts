@@ -7,7 +7,7 @@ cron.schedule('* * * * * *', () => {
 
 const app = express();
 
-app.get('/', (request, response) => {
+app.get('/api', (request, response) => {
     response.json('OK');
 });
 
