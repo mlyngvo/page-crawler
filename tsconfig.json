@@ -4,7 +4,7 @@
     "sourceMap": true,
     "module": "NodeNext",
     "target": "ESNext",
-    "outDir": "./api",
+    "outDir": "./dist",
     "declaration": false,
     "resolveJsonModule": true,
     "strict": true,
